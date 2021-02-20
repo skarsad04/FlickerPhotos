@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.4.1)
+  - OAuthSwift (2.0.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - OAuthSwift (~> 2.0.0)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - OAuthSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+
+PODFILE CHECKSUM: 9fc5aaa934a59445d807605319870127aaa1e6e1
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos-FlickerPhotosUITests/Pods-FlickerPhotos-FlickerPhotosUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

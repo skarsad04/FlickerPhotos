@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6262FB2425E044F20043841E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB2325E044F20043841E /* AppDelegate.swift */; };
+		6262FB2625E044F20043841E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB2525E044F20043841E /* SceneDelegate.swift */; };
+		6262FB2825E044F20043841E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB2725E044F20043841E /* ViewController.swift */; };
+		6262FB2B25E044F20043841E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6262FB2925E044F20043841E /* Main.storyboard */; };
+		6262FB2E25E044F20043841E /* FlickerPhotos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB2C25E044F20043841E /* FlickerPhotos.xcdatamodeld */; };
+		6262FB3025E044F50043841E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6262FB2F25E044F50043841E /* Assets.xcassets */; };
+		6262FB3325E044F50043841E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6262FB3125E044F50043841E /* LaunchScreen.storyboard */; };
+		6262FB3E25E044F50043841E /* FlickerPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB3D25E044F50043841E /* FlickerPhotosTests.swift */; };
+		6262FB4925E044F50043841E /* FlickerPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB4825E044F50043841E /* FlickerPhotosUITests.swift */; };
+		6262FB5825E054020043841E /* PhotosViewmodels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB5725E054020043841E /* PhotosViewmodels.swift */; };
+		6262FB5B25E054C70043841E /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB5A25E054C70043841E /* URLConstant.swift */; };
+		6262FB5D25E05C680043841E /* OauthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB5C25E05C680043841E /* OauthManager.swift */; };
+		6262FB5F25E05F480043841E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB5E25E05F480043841E /* LoginViewModel.swift */; };
+		6262FB6225E062330043841E /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB6125E062330043841E /* LocalDataManager.swift */; };
+		6262FB6525E063C50043841E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB6425E063C50043841E /* PhotosViewController.swift */; };
+		6262FB6C25E069360043841E /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB6A25E069360043841E /* PhotosTableViewCell.swift */; };
+		6262FB6D25E069360043841E /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6262FB6B25E069360043841E /* PhotosTableViewCell.xib */; };
+		6262FB6F25E06F0D0043841E /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6262FB6E25E06F0D0043841E /* placeholder.png */; };
+		6262FB7225E07C230043841E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262FB7125E07C230043841E /* Utility.swift */; };
+		62EDA85225E197BD00F3D40C /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EDA85125E197BD00F3D40C /* ReachabilityManager.swift */; };
+		6D926538EE432D4D73757ADE /* Pods_FlickerPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351B19842094FB8D6B226EA7 /* Pods_FlickerPhotos.framework */; };
+		CCDF1915931F98F9C7B40E17 /* Pods_FlickerPhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE740A85C9FBE5702649586A /* Pods_FlickerPhotosTests.framework */; };
+		DEB6C8427B06104CEE5521C0 /* Pods_FlickerPhotos_FlickerPhotosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374A2135556EC8B159BFB97 /* Pods_FlickerPhotos_FlickerPhotosUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6262FB3A25E044F50043841E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6262FB1825E044F20043841E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6262FB1F25E044F20043841E;
+			remoteInfo = FlickerPhotos;
+		};
+		6262FB4525E044F50043841E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6262FB1825E044F20043841E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6262FB1F25E044F20043841E;
+			remoteInfo = FlickerPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		311FF60328116BAE04DDBE53 /* Pods-FlickerPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerPhotosTests.debug.xcconfig"; path = "Target Support Files/Pods-FlickerPhotosTests/Pods-FlickerPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		351B19842094FB8D6B226EA7 /* Pods_FlickerPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9B98554CE9AC277364F140 /* Pods-FlickerPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerPhotos.debug.xcconfig"; path = "Target Support Files/Pods-FlickerPhotos/Pods-FlickerPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		6262FB2025E044F20043841E /* FlickerPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6262FB2325E044F20043841E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6262FB2525E044F20043841E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6262FB2725E044F20043841E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6262FB2A25E044F20043841E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6262FB2D25E044F20043841E /* FlickerPhotos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlickerPhotos.xcdatamodel; sourceTree = "<group>"; };
+		6262FB2F25E044F50043841E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6262FB3225E044F50043841E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6262FB3425E044F50043841E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6262FB3925E044F50043841E /* FlickerPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6262FB3D25E044F50043841E /* FlickerPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosTests.swift; sourceTree = "<group>"; };
+		6262FB3F25E044F50043841E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6262FB4425E044F50043841E /* FlickerPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6262FB4825E044F50043841E /* FlickerPhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosUITests.swift; sourceTree = "<group>"; };
+		6262FB4A25E044F50043841E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6262FB5725E054020043841E /* PhotosViewmodels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewmodels.swift; sourceTree = "<group>"; };
+		6262FB5A25E054C70043841E /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		6262FB5C25E05C680043841E /* OauthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OauthManager.swift; sourceTree = "<group>"; };
+		6262FB5E25E05F480043841E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6262FB6125E062330043841E /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		6262FB6425E063C50043841E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		6262FB6A25E069360043841E /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		6262FB6B25E069360043841E /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		6262FB6E25E06F0D0043841E /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		6262FB7125E07C230043841E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		6262FB7725E16D720043841E /* Photos+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6262FB7825E16D720043841E /* Photos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		62EDA85125E197BD00F3D40C /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		95269627171740673F823EA5 /* Pods-FlickerPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerPhotosTests.release.xcconfig"; path = "Target Support Files/Pods-FlickerPhotosTests/Pods-FlickerPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
+		A275DC10859C673F280D8DB2 /* Pods-FlickerPhotos-FlickerPhotosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerPhotos-FlickerPhotosUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlickerPhotos-FlickerPhotosUITests/Pods-FlickerPhotos-FlickerPhotosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE740A85C9FBE5702649586A /* Pods_FlickerPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA86191BFC5D1E2B3AC74DD6 /* Pods-FlickerPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerPhotos.release.xcconfig"; path = "Target Support Files/Pods-FlickerPhotos/Pods-FlickerPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		C374A2135556EC8B159BFB97 /* Pods_FlickerPhotos_FlickerPhotosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerPhotos_FlickerPhotosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E075F8F695ADEABDA1E282A3 /* Pods-FlickerPhotos-FlickerPhotosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerPhotos-FlickerPhotosUITests.release.xcconfig"; path = "Target Support Files/Pods-FlickerPhotos-FlickerPhotosUITests/Pods-FlickerPhotos-FlickerPhotosUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6262FB1D25E044F20043841E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D926538EE432D4D73757ADE /* Pods_FlickerPhotos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6262FB3625E044F50043841E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDF1915931F98F9C7B40E17 /* Pods_FlickerPhotosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6262FB4125E044F50043841E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB6C8427B06104CEE5521C0 /* Pods_FlickerPhotos_FlickerPhotosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6262FB1725E044F20043841E = {
+			isa = PBXGroup;
+			children = (
+				6262FB2225E044F20043841E /* FlickerPhotos */,
+				6262FB3C25E044F50043841E /* FlickerPhotosTests */,
+				6262FB4725E044F50043841E /* FlickerPhotosUITests */,
+				6262FB2125E044F20043841E /* Products */,
+				EB7DA8AD01A31FAEDC4484F0 /* Pods */,
+				CAD08EEF0BCA7A76FB1EB27D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6262FB2125E044F20043841E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB2025E044F20043841E /* FlickerPhotos.app */,
+				6262FB3925E044F50043841E /* FlickerPhotosTests.xctest */,
+				6262FB4425E044F50043841E /* FlickerPhotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6262FB2225E044F20043841E /* FlickerPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB7025E07BF80043841E /* Common */,
+				6262FB6625E068BA0043841E /* PresentationLayer */,
+				6262FB6325E063910043841E /* ViewControllers */,
+				6262FB6025E0621F0043841E /* DataBase */,
+				6262FB5925E054510043841E /* Constants */,
+				6262FB5625E053B40043841E /* ViewModels */,
+				6262FB2325E044F20043841E /* AppDelegate.swift */,
+				6262FB2525E044F20043841E /* SceneDelegate.swift */,
+				6262FB2725E044F20043841E /* ViewController.swift */,
+				6262FB2925E044F20043841E /* Main.storyboard */,
+				6262FB2F25E044F50043841E /* Assets.xcassets */,
+				6262FB3125E044F50043841E /* LaunchScreen.storyboard */,
+				6262FB3425E044F50043841E /* Info.plist */,
+				6262FB2C25E044F20043841E /* FlickerPhotos.xcdatamodeld */,
+				6262FB6E25E06F0D0043841E /* placeholder.png */,
+			);
+			path = FlickerPhotos;
+			sourceTree = "<group>";
+		};
+		6262FB3C25E044F50043841E /* FlickerPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB3D25E044F50043841E /* FlickerPhotosTests.swift */,
+				6262FB3F25E044F50043841E /* Info.plist */,
+			);
+			path = FlickerPhotosTests;
+			sourceTree = "<group>";
+		};
+		6262FB4725E044F50043841E /* FlickerPhotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB4825E044F50043841E /* FlickerPhotosUITests.swift */,
+				6262FB4A25E044F50043841E /* Info.plist */,
+			);
+			path = FlickerPhotosUITests;
+			sourceTree = "<group>";
+		};
+		6262FB5625E053B40043841E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB5725E054020043841E /* PhotosViewmodels.swift */,
+				6262FB5E25E05F480043841E /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6262FB5925E054510043841E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB5A25E054C70043841E /* URLConstant.swift */,
+				6262FB5C25E05C680043841E /* OauthManager.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6262FB6025E0621F0043841E /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB7725E16D720043841E /* Photos+CoreDataClass.swift */,
+				6262FB7825E16D720043841E /* Photos+CoreDataProperties.swift */,
+				6262FB6125E062330043841E /* LocalDataManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		6262FB6325E063910043841E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB6425E063C50043841E /* PhotosViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6262FB6625E068BA0043841E /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB6925E068F90043841E /* TableViewCells */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		6262FB6925E068F90043841E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB6A25E069360043841E /* PhotosTableViewCell.swift */,
+				6262FB6B25E069360043841E /* PhotosTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		6262FB7025E07BF80043841E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6262FB7125E07C230043841E /* Utility.swift */,
+				62EDA85125E197BD00F3D40C /* ReachabilityManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CAD08EEF0BCA7A76FB1EB27D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351B19842094FB8D6B226EA7 /* Pods_FlickerPhotos.framework */,
+				C374A2135556EC8B159BFB97 /* Pods_FlickerPhotos_FlickerPhotosUITests.framework */,
+				AE740A85C9FBE5702649586A /* Pods_FlickerPhotosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB7DA8AD01A31FAEDC4484F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C9B98554CE9AC277364F140 /* Pods-FlickerPhotos.debug.xcconfig */,
+				BA86191BFC5D1E2B3AC74DD6 /* Pods-FlickerPhotos.release.xcconfig */,
+				A275DC10859C673F280D8DB2 /* Pods-FlickerPhotos-FlickerPhotosUITests.debug.xcconfig */,
+				E075F8F695ADEABDA1E282A3 /* Pods-FlickerPhotos-FlickerPhotosUITests.release.xcconfig */,
+				311FF60328116BAE04DDBE53 /* Pods-FlickerPhotosTests.debug.xcconfig */,
+				95269627171740673F823EA5 /* Pods-FlickerPhotosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6262FB1F25E044F20043841E /* FlickerPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6262FB4D25E044F50043841E /* Build configuration list for PBXNativeTarget "FlickerPhotos" */;
+			buildPhases = (
+				4018AF472FA31A073ED2ED55 /* [CP] Check Pods Manifest.lock */,
+				6262FB1C25E044F20043841E /* Sources */,
+				6262FB1D25E044F20043841E /* Frameworks */,
+				6262FB1E25E044F20043841E /* Resources */,
+				B06C334FAAC0CE76E20A1482 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickerPhotos;
+			productName = FlickerPhotos;
+			productReference = 6262FB2025E044F20043841E /* FlickerPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6262FB3825E044F50043841E /* FlickerPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6262FB5025E044F50043841E /* Build configuration list for PBXNativeTarget "FlickerPhotosTests" */;
+			buildPhases = (
+				61982DDFB73F18403EFB7090 /* [CP] Check Pods Manifest.lock */,
+				6262FB3525E044F50043841E /* Sources */,
+				6262FB3625E044F50043841E /* Frameworks */,
+				6262FB3725E044F50043841E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6262FB3B25E044F50043841E /* PBXTargetDependency */,
+			);
+			name = FlickerPhotosTests;
+			productName = FlickerPhotosTests;
+			productReference = 6262FB3925E044F50043841E /* FlickerPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6262FB4325E044F50043841E /* FlickerPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6262FB5325E044F50043841E /* Build configuration list for PBXNativeTarget "FlickerPhotosUITests" */;
+			buildPhases = (
+				7AFEEA1A5E74C90842AB3B5D /* [CP] Check Pods Manifest.lock */,
+				6262FB4025E044F50043841E /* Sources */,
+				6262FB4125E044F50043841E /* Frameworks */,
+				6262FB4225E044F50043841E /* Resources */,
+				661EAEC5FB2A37A3048E46A7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6262FB4625E044F50043841E /* PBXTargetDependency */,
+			);
+			name = FlickerPhotosUITests;
+			productName = FlickerPhotosUITests;
+			productReference = 6262FB4425E044F50043841E /* FlickerPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6262FB1825E044F20043841E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = AlamShaikh;
+				TargetAttributes = {
+					6262FB1F25E044F20043841E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					6262FB3825E044F50043841E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 6262FB1F25E044F20043841E;
+					};
+					6262FB4325E044F50043841E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 6262FB1F25E044F20043841E;
+					};
+				};
+			};
+			buildConfigurationList = 6262FB1B25E044F20043841E /* Build configuration list for PBXProject "FlickerPhotos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6262FB1725E044F20043841E;
+			productRefGroup = 6262FB2125E044F20043841E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6262FB1F25E044F20043841E /* FlickerPhotos */,
+				6262FB3825E044F50043841E /* FlickerPhotosTests */,
+				6262FB4325E044F50043841E /* FlickerPhotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6262FB1E25E044F20043841E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6262FB6D25E069360043841E /* PhotosTableViewCell.xib in Resources */,
+				6262FB3325E044F50043841E /* LaunchScreen.storyboard in Resources */,
+				6262FB3025E044F50043841E /* Assets.xcassets in Resources */,
+				6262FB6F25E06F0D0043841E /* placeholder.png in Resources */,
+				6262FB2B25E044F20043841E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6262FB3725E044F50043841E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6262FB4225E044F50043841E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4018AF472FA31A073ED2ED55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickerPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61982DDFB73F18403EFB7090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickerPhotosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661EAEC5FB2A37A3048E46A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos-FlickerPhotosUITests/Pods-FlickerPhotos-FlickerPhotosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos-FlickerPhotosUITests/Pods-FlickerPhotos-FlickerPhotosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos-FlickerPhotosUITests/Pods-FlickerPhotos-FlickerPhotosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFEEA1A5E74C90842AB3B5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickerPhotos-FlickerPhotosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B06C334FAAC0CE76E20A1482 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos/Pods-FlickerPhotos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos/Pods-FlickerPhotos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlickerPhotos/Pods-FlickerPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6262FB1C25E044F20043841E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62EDA85225E197BD00F3D40C /* ReachabilityManager.swift in Sources */,
+				6262FB2825E044F20043841E /* ViewController.swift in Sources */,
+				6262FB2425E044F20043841E /* AppDelegate.swift in Sources */,
+				6262FB6225E062330043841E /* LocalDataManager.swift in Sources */,
+				6262FB6C25E069360043841E /* PhotosTableViewCell.swift in Sources */,
+				6262FB2625E044F20043841E /* SceneDelegate.swift in Sources */,
+				6262FB5825E054020043841E /* PhotosViewmodels.swift in Sources */,
+				6262FB5F25E05F480043841E /* LoginViewModel.swift in Sources */,
+				6262FB5D25E05C680043841E /* OauthManager.swift in Sources */,
+				6262FB7225E07C230043841E /* Utility.swift in Sources */,
+				6262FB2E25E044F20043841E /* FlickerPhotos.xcdatamodeld in Sources */,
+				6262FB5B25E054C70043841E /* URLConstant.swift in Sources */,
+				6262FB6525E063C50043841E /* PhotosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6262FB3525E044F50043841E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6262FB3E25E044F50043841E /* FlickerPhotosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6262FB4025E044F50043841E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6262FB4925E044F50043841E /* FlickerPhotosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6262FB3B25E044F50043841E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6262FB1F25E044F20043841E /* FlickerPhotos */;
+			targetProxy = 6262FB3A25E044F50043841E /* PBXContainerItemProxy */;
+		};
+		6262FB4625E044F50043841E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6262FB1F25E044F20043841E /* FlickerPhotos */;
+			targetProxy = 6262FB4525E044F50043841E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6262FB2925E044F20043841E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6262FB2A25E044F20043841E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6262FB3125E044F50043841E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6262FB3225E044F50043841E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6262FB4B25E044F50043841E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6262FB4C25E044F50043841E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6262FB4E25E044F50043841E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9B98554CE9AC277364F140 /* Pods-FlickerPhotos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alam.FlickerPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6262FB4F25E044F50043841E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA86191BFC5D1E2B3AC74DD6 /* Pods-FlickerPhotos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alam.FlickerPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6262FB5125E044F50043841E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311FF60328116BAE04DDBE53 /* Pods-FlickerPhotosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerPhotosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alam.FlickerPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickerPhotos.app/FlickerPhotos";
+			};
+			name = Debug;
+		};
+		6262FB5225E044F50043841E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95269627171740673F823EA5 /* Pods-FlickerPhotosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerPhotosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alam.FlickerPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickerPhotos.app/FlickerPhotos";
+			};
+			name = Release;
+		};
+		6262FB5425E044F50043841E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A275DC10859C673F280D8DB2 /* Pods-FlickerPhotos-FlickerPhotosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alam.FlickerPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlickerPhotos;
+			};
+			name = Debug;
+		};
+		6262FB5525E044F50043841E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E075F8F695ADEABDA1E282A3 /* Pods-FlickerPhotos-FlickerPhotosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlickerPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alam.FlickerPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlickerPhotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6262FB1B25E044F20043841E /* Build configuration list for PBXProject "FlickerPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6262FB4B25E044F50043841E /* Debug */,
+				6262FB4C25E044F50043841E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6262FB4D25E044F50043841E /* Build configuration list for PBXNativeTarget "FlickerPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6262FB4E25E044F50043841E /* Debug */,
+				6262FB4F25E044F50043841E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6262FB5025E044F50043841E /* Build configuration list for PBXNativeTarget "FlickerPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6262FB5125E044F50043841E /* Debug */,
+				6262FB5225E044F50043841E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6262FB5325E044F50043841E /* Build configuration list for PBXNativeTarget "FlickerPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6262FB5425E044F50043841E /* Debug */,
+				6262FB5525E044F50043841E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6262FB2C25E044F20043841E /* FlickerPhotos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6262FB2D25E044F20043841E /* FlickerPhotos.xcdatamodel */,
+			);
+			currentVersion = 6262FB2D25E044F20043841E /* FlickerPhotos.xcdatamodel */;
+			path = FlickerPhotos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6262FB1825E044F20043841E /* Project object */;
+}

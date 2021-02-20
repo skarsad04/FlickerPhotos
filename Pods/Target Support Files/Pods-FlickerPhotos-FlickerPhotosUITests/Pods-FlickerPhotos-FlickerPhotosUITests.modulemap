@@ -1,0 +1,6 @@
+framework module Pods_FlickerPhotos_FlickerPhotosUITests {
+  umbrella header "Pods-FlickerPhotos-FlickerPhotosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
